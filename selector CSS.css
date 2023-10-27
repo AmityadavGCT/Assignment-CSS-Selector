@@ -1,0 +1,68 @@
+/* Question 1 CSS PArt */
+/* Task CSS B */
+/* combinator selector */
+li a{
+    color: red;
+}
+.card > h2{
+    color: green;
+    background-color: yellow;
+}
+.card .para1{
+    color: red;
+}
+/* Task CSS C */
+/* attribute Selector */
+    a[href] {
+    color: red;
+   text-decoration: none;
+}
+    a[class="active"]{
+    color: green;
+    text-decoration: underline;
+}
+    a[target="_self"]{
+    background-color: aquamarine;
+}
+/* Task CSS D */
+   nav p:last-child::after{
+        content:"...";
+    }
+    li::marker{
+        color: yellow;
+    }
+    p:nth-child(even)::first-letter {
+        color: red;
+        font-size: 30px;
+    }
+/* Question 2 CSS PArt */
+/* Descendant Selector */
+.container > li a{
+    list-style: none;
+    text-decoration: none;
+}
+.container li {
+    display: inline;
+}
+.container a{
+    margin: 5px;
+}
+/* Question:3 CSS Part */
+    h1::after{
+    content: '...Add last letter';
+    }
+    h1::before{
+        content: 'Add First letter...';
+}
+/* Question:4 CSS Part */
+button{
+    color: white;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 10px 5px 5px gray;
+}
